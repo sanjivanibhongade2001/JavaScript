@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array findIndex method</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const arr = [11,8, 43,51,91,10,23,41,65,19,22];
+        let arr2 = arr.findIndex(myFunction);
+
+        document.getElementById('demo').innerHTML = "Index of first above 18 is " + arr2;
+
+        function myFunction(value, index, array){
+            return value > 18;
+        }
+       
+    </script>
+</body>
+</html>

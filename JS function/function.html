@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in head tag</title>
+
+    <script>
+        function myFunction(){
+            document.getElementById('a').innerHTML = ' Second Paragraph.'
+        }
+        function Name(){
+            document.getElementById('b').innerHTML = 'Hello Sanjivani'
+        }
+    </script>
+</head>
+<body>
+    <p id="b">My Name is Sanjivani</p>
+    <button type="button" onclick="Name()">Click Here</button>
+    <p id='a'>First Paragraph</p>
+    <button type="button" onclick="myFunction()">Click me</button>
+</body>
+</html>

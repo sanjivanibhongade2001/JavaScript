@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random array sorting</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Click here</button>
+
+    <script>
+        const arr =[32, 33, 76, 67, 78, 29, 18];
+        document.getElementById("demo").innerHTML = arr;
+
+       function myFunction(){
+        arr.sort(function(){return 0.5-Math.random()});
+        document.getElementById("demo").innerHTML = arr;
+
+       }
+
+    </script>
+</body>
+</html>

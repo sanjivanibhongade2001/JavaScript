@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array reduce method</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const arr = [11,43,51,91,10,23,41,65,19,22];
+        const sum = arr.reduce(myFunction);
+
+        function myFunction(total,value, index, array){
+            return total + value
+        }
+        document.getElementById("demo").innerHTML = sum;
+    </script>
+</body>
+</html>

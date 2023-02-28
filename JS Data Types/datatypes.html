@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        // Numbers:
+        let length = 16.00;
+        let weight = 7.5;
+        document.getElementById('demo').innerHTML = length;
+        document.getElementById('demo1').innerHTML = weight;
+
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+        document.getElementById('demo2').innerHTML = color;
+        document.getElementById('demo3').innerHTML = lastName;
+
+
+        // Booleans
+        let x = true;
+        let y = false;
+        document.getElementById('demo4').innerHTML = x;
+
+
+        // Object:
+        const person = {firstName:"John", lastName:"Doe"};
+        document.getElementById('demo5').innerHTML = person.firstName;
+
+
+        // Array object:
+        const cars = ["Saab", "Volvo", "BMW"];        
+        document.getElementById('demo6').innerHTML = cars[1];
+
+
+        // Date object:
+        const date = new Date("2022-03-25");
+        document.getElementById('demo7').innerHTML = date;
+
+    </script>
+</body>
+</html>

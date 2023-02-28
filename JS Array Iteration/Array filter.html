@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array filter</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const arr = [11,43,51,91,10,23,41,65,19,22];
+        const above18 = arr.filter(myFunction);
+
+        function myFunction(value){
+            return value > 18;
+
+        }
+
+        document.getElementById('demo').innerHTML = above18;
+    </script>
+</body>
+</html>

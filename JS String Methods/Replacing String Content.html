@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replacing String Content</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click to change</button>
+
+<p id="demo">Change the word Sanjivani</p>
+
+    <script>
+        function myFunction() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.replace("Sanjivani","Bhongade");
+        }
+    </script>
+</body>
+</html>
