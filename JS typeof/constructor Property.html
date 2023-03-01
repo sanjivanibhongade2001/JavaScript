@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>constructor Property</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 
+        "sanjivani".constructor + "<br><br>" +
+        (3.14).constructor + "<br><br>" +
+        false.constructor + "<br><br>" +
+        [1,2,3,4].constructor + "<br><br>" +
+        {name:'sanjivani', age:22}.constructor + "<br><br>" +
+        new Date().constructor + "<br><br>" +
+        function () {}.constructor;
+    </script>
+</body>
+</html>

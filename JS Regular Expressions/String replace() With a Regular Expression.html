@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String replace() With a Regular Expression</title>
+</head>
+<body>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">Sanjivani Bhongade</p>
+
+    <script>
+        function myFunction() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML =
+        text.replace(/Sanjivani/i, "Sweety");
+        }
+    </script>
+</body>
+</html>
