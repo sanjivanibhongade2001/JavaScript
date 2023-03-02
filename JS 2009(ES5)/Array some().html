@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array some()</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+    var numbers = [45, 4, 9, 16, 25];
+    var allOver18 = numbers.some(myFunction);
+
+    document.getElementById("demo").innerHTML = "Some over 18 is " + allOver18;
+
+    function myFunction(value) {
+    return value > 18;
+    }
+    </script>
+</body>
+</html>
